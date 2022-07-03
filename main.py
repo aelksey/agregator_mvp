@@ -24,11 +24,11 @@ def display_main_page():
 
 @app.route('/product')
 def display_product_page():
-    return render_template('index.html', title = 'О товаре')
+    return render_template('product.html', title = 'О товаре')
 
 @app.route('/cart')
 def display_cart():
-    return render_template('index.html', title = 'Корзина')
+    return render_template('cart.html', title = 'Корзина')
 
 if __name__ == "__main__":
     app.run(debug=True)
