@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>agregator_mvp_mainpage</title>
+    {% if title %}
+    <title>Агрегатор MVP - {{title}}</title>
+    {% else %}
+    <title>Агрегатор MVP</title>
+    {% endif %}
 </head>
 <body>
-    <div id="header">
-        <header>Agregator MVP</header>
-    </div>
-    <div id="page-content"></div>
-    <div id="footer"></div>
+   {% block content %}{% endblock %}
 </body>
 </html>
